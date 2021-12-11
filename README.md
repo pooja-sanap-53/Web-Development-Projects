@@ -5,6 +5,6 @@
 - Since this projects are elaborating my coding journey, this can be helpful for other beginners too.
 - Feel free to go through the code, and give it a try.
 
-Thankyou!
-Warm Regards,
-![Pooja Sanap](https://github.com/pooja-sanap-53/)
+Thankyou!<br>
+Warm Regards,<br>
+[Pooja Sanap](https://github.com/pooja-sanap-53/)
