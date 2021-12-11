@@ -1,0 +1,308 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#navbar ul li a:active{
+    color:black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../images/larm-rmah-AEaTUnvneik-unsplash.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* info section  */
+
+#info1{
+    margin: 0px;
+    padding: 15px;
+    background-color: palevioletred;
+    font-size: 40px;
+    text-align: center;
+}
+
+#info2{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto ;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: steelblue;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+.info3{
+    background-color: palevioletred;
+    text-align: center;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto ;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+}
+
+#item1{
+    grid-column: 1 /span2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    justify-content: center;
+}
+#item2{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-family: cursive;
+    text-align: center;
+    justify-content: space-evenly;
+}
+#item3{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-family: cursive;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.grid-item{
+    padding: 10px;
+}
+
+
+/* Services Section */ 
+#box1{
+    background-color: rgb(170, 238, 185);
+    font-size: 32px;
+    padding: 25px;
+    text-align: center;
+    vertical-align: middel;
+   margin: 10px;
+   padding-top: 20px;
+   padding-left: 20px;
+}
+#box2{
+    background-color: peachpuff;
+    font-size: 25px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 32px;
+    
+}
+
+#img1{
+    vertical-align: middle;
+    float: left;
+    width: 600px;
+    height: 300px;
+}
+#img2{
+    float:right;
+    padding: 10px;
+    width: 500px;
+    height: 300px;
+    vertical-align: middle;
+}
+
+.help{
+    
+    text-align: left;
+    font-size: 25px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    
+}
+
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.h-primaryservices{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 45px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:orangered;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+#partnerinfo{
+    background-color: royalblue;
+    font-size: 35px;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    justify-content: space-evenly;
+    font-family: fantasy;
+    line-height: 45px;
+}

@@ -1,0 +1,120 @@
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#navbar ul li a:active{
+    color:black;
+    background-color: white;
+}
+
+#aboutimg1{
+    height: 300px;
+    width: 200px;
+    padding: 30px;
+}
+/* intro para */
+.aboutpara1{
+    text-align: center;
+    justify-content: space-evenly;
+    font-family: cursive;
+    font-size: 50px;
+}
+
+/* missions section  */
+.box{
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid yellow;
+    justify-content: space-evenly;
+    }
+
+.aboutpara{
+    text-align: center;
+    font-size: 25px;
+}
+
+.aboutdiv1{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+/* team section  */
+.ourteam{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* footer section  */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+.center{
+    text-align: center;
+}
+#aboutimg1{
+    width: -moz-available;
+    height: 500px;
+}
