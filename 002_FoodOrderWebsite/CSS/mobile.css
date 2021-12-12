@@ -1,0 +1,39 @@
+/* Navigation  */
+#navbar{
+    flex-direction: column;
+}
+
+#navbar img{
+    border-radius: 100%;
+}
+
+/* Home */
+
+#home{
+    height: 470px;
+
+}
+
+#home p{
+    font-size: 13px;
+    width: 255px;
+}
+
+/* Services */
+#services{
+    flex-direction: column;
+}
+
+/* Clients */
+#clients{
+    flex-wrap: wrap;
+}
+#clients img{
+    width: 70px;
+    height: 70px;
+}
+
+#contact{
+    position: relative;
+    z-index: 1;
+}
