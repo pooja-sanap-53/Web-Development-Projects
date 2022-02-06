@@ -1,0 +1,26 @@
+/* Collapsing navbar  */
+.main-nav a:not(:first-child){
+    display: none;
+}
+
+.main-nav a.icon {
+    display: block;
+    float: right;
+}
+
+.main-nav.responsive {
+    position: relative;
+}
+
+.main-nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.main-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
